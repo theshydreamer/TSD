@@ -1,0 +1,46 @@
+
+/* ./src/styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS for additional styling */
+html {
+  scroll-behavior: smooth;
+}
+
+.bg-dark-gradient {
+  background: linear-gradient(180deg, #00f9ff 0%, #1a1a1a 100%);
+}
+
+.nav-link {
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #3b82f6; /* Tailwind blue-500 */
+}
+
+/* Optional: Smooth scroll and transition enhancements */
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Custom form styling */
+form input, form textarea {
+  transition: all 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+  outline: none;
+  border-color: #3b82f6; /* Tailwind blue-500 */
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+
+.text-justify-custom{
+  text-align: justify;
+}
+
+
+

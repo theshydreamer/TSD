@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Shy Dreamer - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js" defer></script>
+    <!-- <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+    <style>
+        /* Custom Futuristic Styles */
+        body {
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        /* .neon-text {
+            color: #00f9ff;
+            text-shadow: 0 0 2px #00f9ff, 0 0 5px #00f9ff, 0 0 8px #00f9ff;
+        } */
+
+        .neon-text {
+        color: #00f9ff;
+        text-shadow: 0 0 1.5px #00f9ff, 0 0 3.75px #00f9ff, 0 0 6px #00f9ff;
+        }
+
+        .neon-button {
+            background: linear-gradient(45deg, #00f9ff, #ff007f);
+            color: #fff;
+            border: 2px solid #00f9ff;
+            border-radius: 25px;
+            padding: 12px 24px;
+            text-transform: uppercase;
+            font-weight: bold;
+            box-shadow: 0 0 8px #00f9ff, 0 0 12px #00f9ff;
+            transition: all 0.3s ease;
+        }
+
+        .neon-button:hover {
+            background: linear-gradient(45deg, #ff007f, #00f9ff);
+            box-shadow: 0 0 12px #ff007f, 0 0 20px #ff007f;
+        }
+
+        .nav-link:hover, .footer-link:hover {
+            color: #00f9ff;
+            text-shadow: 0 0 2px #00f9ff, 0 0 5px #00f9ff;
+        }
+
+        .bg-dark-gradient {
+            background: linear-gradient(180deg, #2e2e2e 0%, #121212 100%);
+        }
+
+        .neon-border {
+            border: 2px solid #00f9ff;
+            padding: 12px;
+            border-radius: 15px;
+        }
+
+        .neon-box {
+            background: #121212;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 0 8px #00f9ff;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .neonbox {
+            background: #121212;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 0 8px #00f9ff;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .neon-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px #00f9ff, 0 0 30px #00f9ff;
+        }
+
+        .text-futuristic {
+            font-family: 'Space Mono', monospace;
+            letter-spacing: 2px;
+        }
+
+        .container-box {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #1f1f1f;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+            animation: slideIn 1s ease-out forwards;
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Smaller contact form */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Footer styles */
+        .footer {
+            background: #121212;
+            padding: 30px 0;
+            color: white;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .footer-link {
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: bold;
+            color: #00f9ff;
+            transition: color 0.3s;
+        }
+
+        .footer-link:hover {
+            color: #ff007f;
+        }
+
+    </style>
+</head>
+<body class="bg-dark-gradient text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-gray-850/80 backdrop-blur-md shadow-sm">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="text-2xl font-bold neon-text">The Shy Dreamer</div>
+            <div class="flex space-x-6">
+                <a href="#home" class="nav-link text-lg hover:text-neon">Home</a>
+                <a href="#about" class="nav-link text-lg hover:text-neon">About</a>
+                <a href="#projects" class="nav-link text-lg hover:text-neon">Projects</a>
+                <a href="#skills" class="nav-link text-lg hover:text-neon">Skills</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home/Landing Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center mx-auto px-4 py-16">
+        <div class="text-center container-box">
+            <img src="1.jpg" alt="Profile" class="mx-auto mb-6 rounded-full w-48 h-48 object-cover border-4 neon-border">
+            <h1 class="text-5xl font-bold mb-4 neon-text">John Harry Beato</h1>
+            <p class="text-xl text-gray-300 font-bold">Web Developer</p>
+            <div class="mt-6 space-x-4">
+                <a href="JohnHarryBeato - Resume.pdf" class="neon-button" target="_blank">View Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container mx-auto px-4 py-16">
+        <h2 class="text-4xl font-bold text-center mb-12 neon-text">About Me</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div>
+                <h3 class="text-2xl font-semibold mb-4 neon-text">Personal Information</h3>
+                <div class="neon-box">
+                    <h4 class="font-bold">John Harry D. Beato</h4>
+                    <p>22 Years Old</p>
+                    <p>09162805635</p>
+                    <p>johnharrybeato@gmail.com</p>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-2xl font-semibold mb-4 neon-text">Education</h3>
+                <div class="neon-box">
+                    <h4 class="font-bold">Bachelors Degree</h4>
+                    <p>Computer Engineering</p>
+                    <p>Major in System and Network Administration</p>
+                    <p>Eastern Samar State University</p>
+                    <p>June 2024</p>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-2xl font-semibold mb-4 neon-text">Experience</h3>
+                <div class="neon-box">
+                    <h4 class="font-bold">Internship</h4>
+                    <p>Libreng Sakay Program</p>
+                    <p>City Population Office</p>
+                    <p>May - July 2023</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="mx-auto px-4 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 neon-text">Projects</h2>
+            <div class="grid md:grid-cols-1 gap-8 justify-items-center">
+                <div class="neon-box mx-auto">
+                    <img src="ams.png" alt="Project 1" class="w-full h-48 object-contain">
+                    <div class="p-6">
+                        <h3 class="font-bold text-2xl mb-4 neon-text">Attendance Monitoring System</h3>
+                        <p class="text-lg"><strong>Description:</strong> An Attendance Monitoring System using RFID is a technology-based solution designed to track and manage the attendance of individuals within a specific environment of our school. It utilizes RFID cards issued to individuals, which are then scanned by RFID readers placed at entry. This system automatically records the presence or absence of individuals, providing accurate attendance data without the need for manual input.</p>
+                        <br>
+                        <p class="text-lg"><strong>Software:</strong> Visual Studio Code, Node.js, Express.js, PostgreSQL, and Amazon Web Services (AWS)</p>
+                        <p class="text-lg"><strong>Hardware:</strong>: Raspberry Pi, RFID Card and Scanner, Monitor, Power Supply and Wall Mount Enclosure.</p>
+                        <!-- <a href="https://link-to-project1.com" target="_blank" class="neon-button mt-4 inline-block">View Project</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+                <!-- <div class="neon-box">
+                    <img src="" alt="Project 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 neon-text">Project 2</h3>
+                        <p>ON PROCESS...</p>
+                    </div>
+                </div>  -->
+                <!-- <div class="neon-box">
+                    <img src="" alt="Project 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 neon-text">Project 3</h3>
+                        <p>ON PROCESS...</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container mx-auto px-4 py-16">
+        <h2 class="text-4xl font-bold text-center mb-12 neon-text">Skills</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="neon-box">
+                <h3 class="text-2xl font-semibold mb-4 neon-text">Programming Languages</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="neon-text px-3 py-1 rounded-full">JavaScript</span>
+                    <span class="neon-text px-3 py-1 rounded-full">C++</span>
+                    <span class="neon-text px-3 py-1 rounded-full">Java</span>
+                </div>
+            </div>
+            <div class="neon-box">
+                <h3 class="text-2xl font-semibold mb-4 neon-text">Web Technologies</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="neon-text px-3 py-1 rounded-full">React</span>
+                    <span class="neon-text px-3 py-1 rounded-full">Node.js</span>
+                    <span class="neon-text px-3 py-1 rounded-full">Express.js</span>
+                    <span class="neon-text px-3 py-1 rounded-full">TailwindCSS</span>
+                </div>
+            </div>
+            <div class="neon-box">
+                <h3 class="text-2xl font-semibold mb-4 neon-text">Design</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="neon-text px-3 py-1 rounded-full">Figma</span>
+                    <span class="neon-text px-3 py-1 rounded-full">Adobe Photoshop</span>
+                </div>
+            </div>
+            <div class="neon-box">
+                <h3 class="text-2xl font-semibold mb-4 neon-text">Databases</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="neon-text px-3 py-1 rounded-full">PostgreSQL</span>
+                </div>
+            </div>
+            <div class="neon-box">
+                <h3 class="text-2xl font-semibold mb-4 neon-text">Tools</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="neon-text px-3 py-1 rounded-full">Visual Studio Code</span>
+                    <span class="neon-text px-3 py-1 rounded-full">Git</span>
+                    <span class="neon-text px-3 py-1 rounded-full">GitHub</span>
+                    <span class="neon-text px-3 py-1 rounded-full">AWS Cloud (Amazon Web Services)</span>
+                </div>
+            </div>
+            <div class="neon-box">
+                <h3 class="text-2xl font-semibold mb-4 neon-text">Others</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="neon-text px-3 py-1 rounded-full">Raspberry Pi</span>
+                    <span class="neon-text px-3 py-1 rounded-full">Arduino</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container mx-auto text-center">
+            <p class="text-sm">&copy; 2025 The Shy Dreamer.</p>
+            <div class="footer-links">
+                <a href="https://github.com/jharrycreates" class="footer-link">GitHub</a>
+                <a href="https://www.linkedin.com/in/john-harry-23934833b/" class="footer-link">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
