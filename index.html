@@ -141,14 +141,14 @@
 </head>
 <body class="bg-dark-gradient text-white">
 
-    <!-- Navigation -->
     <nav class="fixed top-0 w-full z-50 bg-gray-850/80 backdrop-blur-md shadow-sm">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <!-- Brand -->
             <a href="#home" class="text-2xl font-bold neon-text">The Shy Dreamer</a>
             
             <!-- Mobile Menu Button -->
-            <button id="menu-toggle" class="md:hidden text-2xl text-white focus:outline-none">
+            <button id="menu-toggle" 
+                    class="md:hidden text-2xl text-white focus:outline-none relative z-50">
                 &#9776; <!-- Burger Icon -->
             </button>
             
@@ -162,13 +162,15 @@
         </div>
     
         <!-- Mobile Dropdown Links -->
-        <div id="mobile-menu" class="hidden bg-gray-800 flex flex-col space-y-4 py-4 px-6 md:hidden">
+        <div id="mobile-menu" 
+             class="hidden absolute top-full left-0 w-full bg-gray-800 flex flex-col space-y-4 py-4 px-6 md:hidden">
             <a href="#home" class="nav-link text-lg hover:text-neon">Home</a>
             <a href="#about" class="nav-link text-lg hover:text-neon">About</a>
             <a href="#projects" class="nav-link text-lg hover:text-neon">Projects</a>
             <a href="#skills" class="nav-link text-lg hover:text-neon">Skills</a>
         </div>
     </nav>
+    
     
     
 
@@ -315,13 +317,8 @@
         <div class="container mx-auto text-center">
             <p class="text-sm">&copy; 2025 The Shy Dreamer.</p>
             <div class="footer-links">
-                <a href="https://github.com/yourusername" class="footer-link">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://linkedin.com/in/yourusername" class="footer-link">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <!-- Add other icons -->
+                <a href="https://github.com/jharrycreates" class="footer-link">GitHub</a>
+                <a href="https://www.linkedin.com/in/john-harry-23934833b/" class="footer-link">LinkedIn</a>
             </div>
             
         </div>
