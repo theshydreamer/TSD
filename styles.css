@@ -42,5 +42,8 @@ form input:focus, form textarea:focus {
   text-align: justify;
 }
 
+#mobile-menu {
+  transition: all 0.3s ease-in-out;
+}
 
 
